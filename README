@@ -1,0 +1,21 @@
+A blog in http://drupal.org/node/693138. But i can't using this (see reply).
+I'm working and this is work.
+
+Writing a module for drupal CMS (http://drupal.org) we are sleeply with implement hook_schema. (design database and writing this in hook_schema).
+Mysql Workbench is a verry good tool for draw diagram database. (ER and Database Diagram).
+
+
+---------
+
+Vietnammes:
+trong việc phát triển 1 module cho drupal chúng ta phải làm đi làm lại công việc thiết kế database và gõ lại nó vô hook schema.
+
+Mysql workbench là 1 công cụ rất tốt cho chúng ta thiết kế CSDL.
+
+Tôi viết ra ứng dụng này là để giảm thiểu thời gian viết các câu lệnh nhàm chán khi khai báo 1 hook_schema.
+
+-
+Install:
+ + Open Mysql Workbench > Scripting > Install Plugin/Module.
+ + Restart mysql workbench.
+
