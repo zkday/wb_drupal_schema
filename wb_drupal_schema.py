@@ -33,8 +33,8 @@ def getColumnDef(col):
         opts.append("'default' => %s" % col.defaultValue)
       else:
         opts.append("'default' => '%s'" % col.defaultValue)
-  
-  
+
+  ''' set type length '''
   if mtype == 'int': pass
   elif mtype == 'tinyint':
     type = 'int'
@@ -81,8 +81,8 @@ def getColumnDef(col):
   elif mtype == 'datetime': pass
   elif mtype == 'date':
     type = 'datetime'
-  else:
-    raise Exception('Data type %s not supported on Drupal Schema. (%s.%s[%s])' % (mtype, col.owner.name, col.name, mtype))
+  else: pass
+    #raise Exception('Data type %s not supported on Drupal Schema. (%s.%s[%s])' % (mtype, col.owner.name, col.name, mtype))
   
   if col.comment:
     opts.append("'description' => '%s'" % col.comment)
